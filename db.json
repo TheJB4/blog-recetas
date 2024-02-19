@@ -24,7 +24,7 @@
             ],
             "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
             "valoracion": 4.7,
-            "imagen": "tarta_manzana.jpg"
+            "imagen": "https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.jpg?s=1024x1024&w=is&k=20&c=V-gworADGYA3NJCnwESpmv1pCVKXOHEcIAkud_3iA8A="
         },
         {
             "id":2,
@@ -47,7 +47,7 @@
             ],
             "sugerencias": "Puedes añadir anchoas o tomates cherry para darle un toque de frescura adicional.",
             "valoracion": 4.5,
-            "imagen": "ensalada_cesar.jpg"
+            "imagen": "https://media.istockphoto.com/id/534139231/es/foto/saludable-ensalada-c%C3%A9sar-de-pollo-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=HPusC2CBm7GlsXjlmmxculASLTQZ9q-Dq_l9EAJzyb4="
         },
         {
             "id":3,
@@ -72,7 +72,7 @@
             ],
             "sugerencias": "Puedes servir la sopa acompañada de croutons o queso rallado.",
             "valoracion": 4.8,
-            "imagen": "sopa_tomate.jpg"
+            "imagen": "https://media.istockphoto.com/id/689537488/es/foto/sopa-de-tomate-en-un-bol-negro-sobre-fondo-gris-piedra-vista-superior-copia-espacio.jpg?s=1024x1024&w=is&k=20&c=CXamkUXE27zsgMh1ZGUymBSVFUf8mpbiSi8E7difVao="
         },
         {
             "id":4,
@@ -99,7 +99,7 @@
             ],
             "sugerencias": "Puedes añadir un toque de nuez moscada o pimienta negra para realzar el sabor del risotto.",
             "valoracion": 4.6,
-            "imagen": "risotto_champinones.jpg"
+            "imagen": "https://media.istockphoto.com/id/1606872926/es/foto/plato-de-risotto-de-setas.jpg?s=1024x1024&w=is&k=20&c=1MYS5ZXuU9FLai6pJ0kEM_axkxGzAvJdeEcgIpqHQZI="
         },
         {
             "id":5,
@@ -125,7 +125,7 @@
             ],
             "sugerencias": "Puedes añadir chiles picados si prefieres un plato más picante.",
             "valoracion": 4.9,
-            "imagen": "pollo_curry.jpg"
+            "imagen": "https://media.istockphoto.com/id/579767430/es/foto/pollo-tikka-masala.jpg?s=1024x1024&w=is&k=20&c=aC6r-i330ZvWZ89C7pkOZOsmwgMBOzPOL7Drb6jr444="
         }
     ]
 }
