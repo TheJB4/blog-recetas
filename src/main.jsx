@@ -7,6 +7,7 @@ import Administrador from './routes/Administrador/Administrador'
 import App from './App'
 import Login from './routes/Login/Login'
 import Home from './routes/Home/Home'
+import RecetaDescription from './routes/RecetaDescription/RecetaDescription'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home />
+      },
+      {
+        path:"/:tituloReceta",
+        element:<RecetaDescription />
       },
       {
         path:"admin",

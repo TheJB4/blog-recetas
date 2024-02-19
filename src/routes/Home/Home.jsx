@@ -16,7 +16,13 @@ export default function Home() {
                 {recetas.map(receta => (
                     <div className="border border-gray-300 rounded-lg p-4">
                         <img src={receta.imagen} alt="" className="w-full h-[200px]  object-cover mb-2 rounded-md grid-flow-col" />
-                        <Link to='' className="text-center text-blue-500 hover:text-blue-700">{receta.titulo}</Link>
+                        <Link
+                            to={`/${receta.titulo}`}
+                            state={{receta: receta}}
+                            className="text-center text-blue-500 hover:text-blue-700"
+                        >
+                            {receta.titulo}
+                        </Link>
                     </div>
                 ))}
             </div>
