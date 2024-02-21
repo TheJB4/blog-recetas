@@ -8,6 +8,7 @@ import App from './App'
 import Login from './routes/Login/Login'
 import Home from './routes/Home/Home'
 import RecetaDescription from './routes/RecetaDescription/RecetaDescription'
+import CrearReceta from './routes/CrearReceta/CrearReceta'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path:"login",
         element:<Login/>
+      },
+      {
+        path:"crearReceta",
+        element:<CrearReceta/>
       }
     ]
   }

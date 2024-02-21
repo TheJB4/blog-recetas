@@ -1,131 +1,148 @@
 {
-    "recetas": [
-        {
-            "id":1,
-            "titulo": "Tarta de manzana",
-            "autor": "Ana García",
-            "descripcion": "Una deliciosa tarta de manzana con base de hojaldre y un toque de canela.",
-            "ingredientes": [
-                "1 lámina de hojaldre",
-                "3 manzanas",
-                "100g de azúcar",
-                "1 cucharadita de canela",
-                "Mantequilla"
-            ],
-            "pasos": [
-                "Precalentar el horno a 180°C.",
-                "Pelar y cortar las manzanas en láminas finas.",
-                "Estirar la lámina de hojaldre y colocarla en un molde.",
-                "Pinchar la base con un tenedor.",
-                "Espolvorear el azúcar y la canela sobre el hojaldre.",
-                "Colocar las láminas de manzana sobre el azúcar.",
-                "Hornear durante 30 minutos o hasta que esté dorada.",
-                "Servir caliente con una bola de helado."
-            ],
-            "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
-            "valoracion": 4.7,
-            "imagen": "https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.jpg?s=1024x1024&w=is&k=20&c=V-gworADGYA3NJCnwESpmv1pCVKXOHEcIAkud_3iA8A="
-        },
-        {
-            "id":2,
-            "titulo": "Ensalada César",
-            "autor": "Juan Martínez",
-            "descripcion": "Una ensalada clásica con crutones crujientes, pollo a la parrilla y una salsa cremosa.",
-            "ingredientes": [
-                "Lechuga romana",
-                "Pechuga de pollo",
-                "Crutones",
-                "Queso parmesano",
-                "Salsa César"
-            ],
-            "pasos": [
-                "Lavar y cortar la lechuga en trozos.",
-                "Cortar la pechuga de pollo en tiras y cocinarla a la parrilla.",
-                "Mezclar la lechuga con los crutones.",
-                "Agregar el pollo y espolvorear con queso parmesano rallado.",
-                "Aliñar con salsa César y mezclar bien antes de servir."
-            ],
-            "sugerencias": "Puedes añadir anchoas o tomates cherry para darle un toque de frescura adicional.",
-            "valoracion": 4.5,
-            "imagen": "https://media.istockphoto.com/id/534139231/es/foto/saludable-ensalada-c%C3%A9sar-de-pollo-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=HPusC2CBm7GlsXjlmmxculASLTQZ9q-Dq_l9EAJzyb4="
-        },
-        {
-            "id":3,
-            "titulo": "Sopa de tomate",
-            "autor": "María López",
-            "descripcion": "Una reconfortante sopa de tomate con un toque de albahaca fresca.",
-            "ingredientes": [
-                "Tomates maduros",
-                "Cebolla",
-                "Ajo",
-                "Caldo de verduras",
-                "Albahaca fresca"
-            ],
-            "pasos": [
-                "Pelar y picar los tomates, la cebolla y el ajo.",
-                "Sofreír la cebolla y el ajo en una olla con un poco de aceite de oliva.",
-                "Agregar los tomates picados y cocinar hasta que estén blandos.",
-                "Añadir el caldo de verduras y dejar cocinar a fuego lento durante 20 minutos.",
-                "Triturar la sopa con una batidora hasta obtener una textura suave.",
-                "Picar finamente la albahaca fresca y agregarla a la sopa.",
-                "Salpimentar al gusto y servir caliente."
-            ],
-            "sugerencias": "Puedes servir la sopa acompañada de croutons o queso rallado.",
-            "valoracion": 4.8,
-            "imagen": "https://media.istockphoto.com/id/689537488/es/foto/sopa-de-tomate-en-un-bol-negro-sobre-fondo-gris-piedra-vista-superior-copia-espacio.jpg?s=1024x1024&w=is&k=20&c=CXamkUXE27zsgMh1ZGUymBSVFUf8mpbiSi8E7difVao="
-        },
-        {
-            "id":4,
-            "titulo": "Risotto de champiñones",
-            "autor": "Carlos Pérez",
-            "descripcion": "Un cremoso risotto de champiñones con un toque de vino blanco y queso parmesano.",
-            "ingredientes": [
-                "Arroz Arborio",
-                "Champiñones",
-                "Cebolla",
-                "Vino blanco",
-                "Caldo de pollo",
-                "Queso parmesano"
-            ],
-            "pasos": [
-                "Picar finamente la cebolla y los champiñones.",
-                "Sofreír la cebolla en una sartén con un poco de mantequilla.",
-                "Agregar los champiñones y cocinar hasta que estén dorados.",
-                "Añadir el arroz Arborio y cocinar durante 1 minuto.",
-                "Agregar el vino blanco y dejar reducir.",
-                "Incorporar el caldo de pollo poco a poco, removiendo constantemente hasta que el arroz esté cocido y cremoso.",
-                "Retirar del fuego y agregar el queso parmesano rallado.",
-                "Servir caliente."
-            ],
-            "sugerencias": "Puedes añadir un toque de nuez moscada o pimienta negra para realzar el sabor del risotto.",
-            "valoracion": 4.6,
-            "imagen": "https://media.istockphoto.com/id/1606872926/es/foto/plato-de-risotto-de-setas.jpg?s=1024x1024&w=is&k=20&c=1MYS5ZXuU9FLai6pJ0kEM_axkxGzAvJdeEcgIpqHQZI="
-        },
-        {
-            "id":5,
-            "titulo": "Pollo al curry",
-            "autor": "Laura Rodríguez",
-            "descripcion": "Un plato aromático y sabroso con pollo marinado en una salsa de curry.",
-            "ingredientes": [
-                "Pechuga de pollo",
-                "Cebolla",
-                "Ajo",
-                "Tomate",
-                "Leche de coco",
-                "Curry en polvo"
-            ],
-            "pasos": [
-                "Cortar la pechuga de pollo en trozos y marinarla con curry en polvo.",
-                "Picar la cebolla, el ajo y el tomate.",
-                "Sofreír la cebolla y el ajo en una sartén con un poco de aceite.",
-                "Agregar el pollo y cocinar hasta que esté dorado por todos lados.",
-                "Incorporar el tomate picado y cocinar hasta que se deshaga.",
-                "Verter la leche de coco y dejar cocinar a fuego lento durante 15 minutos.",
-                "Servir caliente con arroz basmati."
-            ],
-            "sugerencias": "Puedes añadir chiles picados si prefieres un plato más picante.",
-            "valoracion": 4.9,
-            "imagen": "https://media.istockphoto.com/id/579767430/es/foto/pollo-tikka-masala.jpg?s=1024x1024&w=is&k=20&c=aC6r-i330ZvWZ89C7pkOZOsmwgMBOzPOL7Drb6jr444="
-        }
-    ]
+  "recetas": [
+    {
+      "id": "1",
+      "titulo": "Tarta de manzana",
+      "autor": "Ana García",
+      "descripcion": "Una deliciosa tarta de manzana con base de hojaldre y un toque de canela.",
+      "ingredientes": [
+        "1 lámina de hojaldre",
+        "3 manzanas",
+        "100g de azúcar",
+        "1 cucharadita de canela",
+        "Mantequilla"
+      ],
+      "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Pelar y cortar las manzanas en láminas finas.",
+        "Estirar la lámina de hojaldre y colocarla en un molde.",
+        "Pinchar la base con un tenedor.",
+        "Espolvorear el azúcar y la canela sobre el hojaldre.",
+        "Colocar las láminas de manzana sobre el azúcar.",
+        "Hornear durante 30 minutos o hasta que esté dorada.",
+        "Servir caliente con una bola de helado."
+      ],
+      "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
+      "valoracion": 4.7,
+      "imagen": "https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.jpg?s=1024x1024&w=is&k=20&c=V-gworADGYA3NJCnwESpmv1pCVKXOHEcIAkud_3iA8A="
+    },
+    {
+      "id": "2",
+      "titulo": "Ensalada César",
+      "autor": "Juan Martínez",
+      "descripcion": "Una ensalada clásica con crutones crujientes, pollo a la parrilla y una salsa cremosa.",
+      "ingredientes": [
+        "Lechuga romana",
+        "Pechuga de pollo",
+        "Crutones",
+        "Queso parmesano",
+        "Salsa César"
+      ],
+      "pasos": [
+        "Lavar y cortar la lechuga en trozos.",
+        "Cortar la pechuga de pollo en tiras y cocinarla a la parrilla.",
+        "Mezclar la lechuga con los crutones.",
+        "Agregar el pollo y espolvorear con queso parmesano rallado.",
+        "Aliñar con salsa César y mezclar bien antes de servir."
+      ],
+      "sugerencias": "Puedes añadir anchoas o tomates cherry para darle un toque de frescura adicional.",
+      "valoracion": 4.5,
+      "imagen": "https://media.istockphoto.com/id/534139231/es/foto/saludable-ensalada-c%C3%A9sar-de-pollo-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=HPusC2CBm7GlsXjlmmxculASLTQZ9q-Dq_l9EAJzyb4="
+    },
+    {
+      "id": "3",
+      "titulo": "Sopa de tomate",
+      "autor": "María López",
+      "descripcion": "Una reconfortante sopa de tomate con un toque de albahaca fresca.",
+      "ingredientes": [
+        "Tomates maduros",
+        "Cebolla",
+        "Ajo",
+        "Caldo de verduras",
+        "Albahaca fresca"
+      ],
+      "pasos": [
+        "Pelar y picar los tomates, la cebolla y el ajo.",
+        "Sofreír la cebolla y el ajo en una olla con un poco de aceite de oliva.",
+        "Agregar los tomates picados y cocinar hasta que estén blandos.",
+        "Añadir el caldo de verduras y dejar cocinar a fuego lento durante 20 minutos.",
+        "Triturar la sopa con una batidora hasta obtener una textura suave.",
+        "Picar finamente la albahaca fresca y agregarla a la sopa.",
+        "Salpimentar al gusto y servir caliente."
+      ],
+      "sugerencias": "Puedes servir la sopa acompañada de croutons o queso rallado.",
+      "valoracion": 4.8,
+      "imagen": "https://media.istockphoto.com/id/689537488/es/foto/sopa-de-tomate-en-un-bol-negro-sobre-fondo-gris-piedra-vista-superior-copia-espacio.jpg?s=1024x1024&w=is&k=20&c=CXamkUXE27zsgMh1ZGUymBSVFUf8mpbiSi8E7difVao="
+    },
+    {
+      "id": "4",
+      "titulo": "Risotto de champiñones",
+      "autor": "Carlos Pérez",
+      "descripcion": "Un cremoso risotto de champiñones con un toque de vino blanco y queso parmesano.",
+      "ingredientes": [
+        "Arroz Arborio",
+        "Champiñones",
+        "Cebolla",
+        "Vino blanco",
+        "Caldo de pollo",
+        "Queso parmesano"
+      ],
+      "pasos": [
+        "Picar finamente la cebolla y los champiñones.",
+        "Sofreír la cebolla en una sartén con un poco de mantequilla.",
+        "Agregar los champiñones y cocinar hasta que estén dorados.",
+        "Añadir el arroz Arborio y cocinar durante 1 minuto.",
+        "Agregar el vino blanco y dejar reducir.",
+        "Incorporar el caldo de pollo poco a poco, removiendo constantemente hasta que el arroz esté cocido y cremoso.",
+        "Retirar del fuego y agregar el queso parmesano rallado.",
+        "Servir caliente."
+      ],
+      "sugerencias": "Puedes añadir un toque de nuez moscada o pimienta negra para realzar el sabor del risotto.",
+      "valoracion": 4.6,
+      "imagen": "https://media.istockphoto.com/id/1606872926/es/foto/plato-de-risotto-de-setas.jpg?s=1024x1024&w=is&k=20&c=1MYS5ZXuU9FLai6pJ0kEM_axkxGzAvJdeEcgIpqHQZI="
+    },
+    {
+      "id": "5",
+      "titulo": "Pollo al curry",
+      "autor": "Laura Rodríguez",
+      "descripcion": "Un plato aromático y sabroso con pollo marinado en una salsa de curry.",
+      "ingredientes": [
+        "Pechuga de pollo",
+        "Cebolla",
+        "Ajo",
+        "Tomate",
+        "Leche de coco",
+        "Curry en polvo"
+      ],
+      "pasos": [
+        "Cortar la pechuga de pollo en trozos y marinarla con curry en polvo.",
+        "Picar la cebolla, el ajo y el tomate.",
+        "Sofreír la cebolla y el ajo en una sartén con un poco de aceite.",
+        "Agregar el pollo y cocinar hasta que esté dorado por todos lados.",
+        "Incorporar el tomate picado y cocinar hasta que se deshaga.",
+        "Verter la leche de coco y dejar cocinar a fuego lento durante 15 minutos.",
+        "Servir caliente con arroz basmati."
+      ],
+      "sugerencias": "Puedes añadir chiles picados si prefieres un plato más picante.",
+      "valoracion": 4.9,
+      "imagen": "https://media.istockphoto.com/id/579767430/es/foto/pollo-tikka-masala.jpg?s=1024x1024&w=is&k=20&c=aC6r-i330ZvWZ89C7pkOZOsmwgMBOzPOL7Drb6jr444="
+    },
+    {
+      "id": "2971",
+      "titulo": "Fideitos con tuco",
+      "autor": "Juan mercado",
+      "descripcion": "Un rico fideo con tuco",
+      "sugerencias": "Podes tambien agregarle crema de leche",
+      "imagen": "https://th.bing.com/th/id/OIP.y8DjAgYGddJ9mn_BXvGMIQHaJ4?rs=1&pid=ImgDetMain",
+      "ingredientes": [
+        "Agregar caquita",
+        "Agregar caquita2"
+      ],
+      "pasos": [
+        "Preparar la olla",
+        "Preparar la olla2"
+      ],
+      "valoracion": 0
+    }
+  ]
 }
