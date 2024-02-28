@@ -1,45 +1,44 @@
+import { Navigate, useLocation, useNavigate } from "react-router";
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-import { crearUnaReceta } from "../../helpers/api"
-import Swal from "sweetalert2"
+import { editarUnaReceta,eliminarUnaReceta } from "../../helpers/api"
+import Swal from "sweetalert2";
 
-export default function CrearReceta() {
-    const { register, handleSubmit, formState: { errors }, reset,resetField } = useForm()
+export default function EditarReceta() {
+    const { register, handleSubmit, formState: { errors }, reset, setValue } = useForm()
+    let navigate = useNavigate()
+    let receta = useLocation().state.receta;
 
     const sendForm = async (producto) => {
         producto.ingredientes = ingredientes
         producto.pasos = pasos
         producto.valoracion = 0
         producto.categorias = categorias
+        
+        let res = await editarUnaReceta(receta.id,producto)
 
-        let response = await crearUnaReceta(producto)
-
-        console.log(response)
-        if(response.status === 201){
+        if(res.status === 200){
             Swal.fire({
-                title: "Receta Creada",
-                text: `La receta "${producto.titulo}" fue creado correctamente`,
+                title: "Receta Editada",
+                text: `La receta "${producto.titulo}" fue editada correctamente`,
                 icon: "success"
               });
               navigate('/')
         }else{
             Swal.fire({
                 title: "Ocurrio un error",
-                text: `La receta "${producto.titulo}" no pudo ser creada. Intenta esta operación en unos minutos.`,
+                text: `La receta "${producto.nombreProducto}" no pudo ser creada. Intenta esta operación en unos minutos.`,
                 icon: "error"
               });
         }
     }
 
     let [nombreIngrediente, setNombreIngrediente] = useState('')
-    let [ingredientes, setIngredientes] = useState([])
-
-    let [nombrePaso, setNombrePaso] = useState('')
-    let [pasos, setPasos] = useState([])
-
+    let [ingredientes, setIngredientes] = useState(receta.ingredientes || [])
     let [nombreCategoria,setNombreCategoria] = useState('')
-    let [categorias,setCategorias] = useState([])
-
+    let [categorias,setCategorias] = useState(receta.categorias || [])
+    let [nombrePaso, setNombrePaso] = useState('')
+    let [pasos, setPasos] = useState(receta.pasos || [])
     return (
         <section className="container mx-auto py-8">
             <form onSubmit={handleSubmit(sendForm)} className="max-w-lg mx-auto">
@@ -47,7 +46,7 @@ export default function CrearReceta() {
                     <label htmlFor="tituloReceta" className="block mb-1">Título receta:</label>
                     <input
                         id="tituloReceta"
-                        {...register("titulo", { required: true })}
+                        {...register("titulo", { value: receta.titulo, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>
@@ -55,7 +54,7 @@ export default function CrearReceta() {
                     <label htmlFor="autor" className="block mb-1">Autor:</label>
                     <input
                         id="autor"
-                        {...register("autor", { required: true })}
+                        {...register("autor", { value: receta.autor, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>
@@ -63,7 +62,7 @@ export default function CrearReceta() {
                     <label htmlFor="descripcion" className="block mb-1">Descripción:</label>
                     <input
                         id="descripcion"
-                        {...register("descripcion", { required: true })}
+                        {...register("descripcion", { value: receta.descripcion, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>
@@ -75,7 +74,6 @@ export default function CrearReceta() {
                             setNombreIngrediente(e.target.value);
                         }}
                         className="w-3/4 px-4 py-2 border rounded-md"
-                        value={nombreIngrediente}
                     />
                     <button
                         onClick={(e) => {
@@ -84,7 +82,7 @@ export default function CrearReceta() {
                                 ...ingredientes,
                                 nombreIngrediente,
                             ]);
-                            setNombreIngrediente("") // Limpiar el input después de agregar
+                            setNombreIngrediente(""); // Limpiar el input después de agregar
                         }}
                         className="px-4 py-2 bg-blue-500 text-white rounded-md ml-2 hover:bg-blue-600"
                     >
@@ -106,7 +104,6 @@ export default function CrearReceta() {
                             setNombrePaso(e.target.value);
                         }}
                         className="w-3/4 px-4 py-2 border rounded-md"
-                        value={nombrePaso}
                     />
                     <button
                         onClick={(e) => {
@@ -133,7 +130,7 @@ export default function CrearReceta() {
                     <label htmlFor="sugerencias" className="block mb-1">Sugerencias:</label>
                     <input
                         id="sugerencias"
-                        {...register("sugerencias", { required: true })}
+                        {...register("sugerencias", { value: receta.sugerencias, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>
@@ -141,7 +138,7 @@ export default function CrearReceta() {
                     <label htmlFor="imagen" className="block mb-1">Imagen:</label>
                     <input
                         id="imagen"
-                        {...register("imagen", { required: true })}
+                        {...register("imagen", { value: receta.imagen, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>
@@ -153,7 +150,6 @@ export default function CrearReceta() {
                             setNombreCategoria(e.target.value);
                         }}
                         className="w-3/4 px-4 py-2 border rounded-md"
-                        value={nombreCategoria}
                     />
                     <button
                         onClick={(e) => {
@@ -178,7 +174,7 @@ export default function CrearReceta() {
                 </div>
                 <input
                     type="submit"
-                    value='Crear'
+                    value='Editar'
                     className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 cursor-pointer"
                 />
             </form>
