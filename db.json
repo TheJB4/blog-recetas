@@ -1,131 +1,149 @@
 {
-    "recetas": [
-        {
-            "id":1,
-            "titulo": "Tarta de manzana",
-            "autor": "Ana García",
-            "descripcion": "Una deliciosa tarta de manzana con base de hojaldre y un toque de canela.",
-            "ingredientes": [
-                "1 lámina de hojaldre",
-                "3 manzanas",
-                "100g de azúcar",
-                "1 cucharadita de canela",
-                "Mantequilla"
-            ],
-            "pasos": [
-                "Precalentar el horno a 180°C.",
-                "Pelar y cortar las manzanas en láminas finas.",
-                "Estirar la lámina de hojaldre y colocarla en un molde.",
-                "Pinchar la base con un tenedor.",
-                "Espolvorear el azúcar y la canela sobre el hojaldre.",
-                "Colocar las láminas de manzana sobre el azúcar.",
-                "Hornear durante 30 minutos o hasta que esté dorada.",
-                "Servir caliente con una bola de helado."
-            ],
-            "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
-            "valoracion": 4.7,
-            "imagen": "tarta_manzana.jpg"
-        },
-        {
-            "id":2,
-            "titulo": "Ensalada César",
-            "autor": "Juan Martínez",
-            "descripcion": "Una ensalada clásica con crutones crujientes, pollo a la parrilla y una salsa cremosa.",
-            "ingredientes": [
-                "Lechuga romana",
-                "Pechuga de pollo",
-                "Crutones",
-                "Queso parmesano",
-                "Salsa César"
-            ],
-            "pasos": [
-                "Lavar y cortar la lechuga en trozos.",
-                "Cortar la pechuga de pollo en tiras y cocinarla a la parrilla.",
-                "Mezclar la lechuga con los crutones.",
-                "Agregar el pollo y espolvorear con queso parmesano rallado.",
-                "Aliñar con salsa César y mezclar bien antes de servir."
-            ],
-            "sugerencias": "Puedes añadir anchoas o tomates cherry para darle un toque de frescura adicional.",
-            "valoracion": 4.5,
-            "imagen": "ensalada_cesar.jpg"
-        },
-        {
-            "id":3,
-            "titulo": "Sopa de tomate",
-            "autor": "María López",
-            "descripcion": "Una reconfortante sopa de tomate con un toque de albahaca fresca.",
-            "ingredientes": [
-                "Tomates maduros",
-                "Cebolla",
-                "Ajo",
-                "Caldo de verduras",
-                "Albahaca fresca"
-            ],
-            "pasos": [
-                "Pelar y picar los tomates, la cebolla y el ajo.",
-                "Sofreír la cebolla y el ajo en una olla con un poco de aceite de oliva.",
-                "Agregar los tomates picados y cocinar hasta que estén blandos.",
-                "Añadir el caldo de verduras y dejar cocinar a fuego lento durante 20 minutos.",
-                "Triturar la sopa con una batidora hasta obtener una textura suave.",
-                "Picar finamente la albahaca fresca y agregarla a la sopa.",
-                "Salpimentar al gusto y servir caliente."
-            ],
-            "sugerencias": "Puedes servir la sopa acompañada de croutons o queso rallado.",
-            "valoracion": 4.8,
-            "imagen": "sopa_tomate.jpg"
-        },
-        {
-            "id":4,
-            "titulo": "Risotto de champiñones",
-            "autor": "Carlos Pérez",
-            "descripcion": "Un cremoso risotto de champiñones con un toque de vino blanco y queso parmesano.",
-            "ingredientes": [
-                "Arroz Arborio",
-                "Champiñones",
-                "Cebolla",
-                "Vino blanco",
-                "Caldo de pollo",
-                "Queso parmesano"
-            ],
-            "pasos": [
-                "Picar finamente la cebolla y los champiñones.",
-                "Sofreír la cebolla en una sartén con un poco de mantequilla.",
-                "Agregar los champiñones y cocinar hasta que estén dorados.",
-                "Añadir el arroz Arborio y cocinar durante 1 minuto.",
-                "Agregar el vino blanco y dejar reducir.",
-                "Incorporar el caldo de pollo poco a poco, removiendo constantemente hasta que el arroz esté cocido y cremoso.",
-                "Retirar del fuego y agregar el queso parmesano rallado.",
-                "Servir caliente."
-            ],
-            "sugerencias": "Puedes añadir un toque de nuez moscada o pimienta negra para realzar el sabor del risotto.",
-            "valoracion": 4.6,
-            "imagen": "risotto_champinones.jpg"
-        },
-        {
-            "id":5,
-            "titulo": "Pollo al curry",
-            "autor": "Laura Rodríguez",
-            "descripcion": "Un plato aromático y sabroso con pollo marinado en una salsa de curry.",
-            "ingredientes": [
-                "Pechuga de pollo",
-                "Cebolla",
-                "Ajo",
-                "Tomate",
-                "Leche de coco",
-                "Curry en polvo"
-            ],
-            "pasos": [
-                "Cortar la pechuga de pollo en trozos y marinarla con curry en polvo.",
-                "Picar la cebolla, el ajo y el tomate.",
-                "Sofreír la cebolla y el ajo en una sartén con un poco de aceite.",
-                "Agregar el pollo y cocinar hasta que esté dorado por todos lados.",
-                "Incorporar el tomate picado y cocinar hasta que se deshaga.",
-                "Verter la leche de coco y dejar cocinar a fuego lento durante 15 minutos.",
-                "Servir caliente con arroz basmati."
-            ],
-            "sugerencias": "Puedes añadir chiles picados si prefieres un plato más picante.",
-            "valoracion": 4.9,
-            "imagen": "pollo_curry.jpg"
-        }
-    ]
+  "recetas": [
+    {
+      "titulo": "Tarta de manzana",
+      "autor": "Ana García",
+      "descripcion": "Una deliciosa tarta de manzana con base de hojaldre y un toque de canela.",
+      "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
+      "imagen": "https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.jpg?s=1024x1024&w=is&k=20&c=V-gworADGYA3NJCnwESpmv1pCVKXOHEcIAkud_3iA8A=",
+      "ingredientes": [
+        "1 lámina de hojaldre",
+        "3 manzanas",
+        "100g de azúcar",
+        "1 cucharadita de canela",
+        "Mantequilla"
+      ],
+      "pasos": [
+        "Precalentar el horno a 180°C.",
+        "Pelar y cortar las manzanas en láminas finas.",
+        "Estirar la lámina de hojaldre y colocarla en un molde.",
+        "Pinchar la base con un tenedor.",
+        "Espolvorear el azúcar y la canela sobre el hojaldre.",
+        "Colocar las láminas de manzana sobre el azúcar.",
+        "Hornear durante 30 minutos o hasta que esté dorada.",
+        "Servir caliente con una bola de helado."
+      ],
+      "valoracion": 0,
+      "categorias": [
+        "Postres",
+        "postres"
+      ],
+      "id": "1"
+    },
+    {
+      "titulo": "Ensalada César",
+      "autor": "Juan Martínezzz",
+      "descripcion": "Una ensalada clásica con crutones crujientes, pollo a la parrilla y una salsa cremosa.",
+      "sugerencias": "Puedes añadir anchoas o tomates cherry para darle un toque de frescura adicional.",
+      "imagen": "https://media.istockphoto.com/id/534139231/es/foto/saludable-ensalada-c%C3%A9sar-de-pollo-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=HPusC2CBm7GlsXjlmmxculASLTQZ9q-Dq_l9EAJzyb4=",
+      "ingredientes": [
+        "Lechuga romana",
+        "Pechuga de pollo",
+        "Crutones",
+        "Queso parmesano",
+        "Salsa César",
+        "Tomate"
+      ],
+      "pasos": [
+        "Lavar y cortar la lechuga en trozos.",
+        "Cortar la pechuga de pollo en tiras y cocinarla a la parrilla.",
+        "Mezclar la lechuga con los crutones.",
+        "Agregar el pollo y espolvorear con queso parmesano rallado.",
+        "Aliñar con salsa César y mezclar bien antes de servir.",
+        "Preparar la olla2"
+      ],
+      "valoracion": 0,
+      "categorias": [
+        "ensaladas",
+        "carne"
+      ],
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "titulo": "Sopa de tomate",
+      "autor": "María López",
+      "descripcion": "Una reconfortante sopa de tomate con un toque de albahaca fresca.",
+      "ingredientes": [
+        "Tomates maduros",
+        "Cebolla",
+        "Ajo",
+        "Caldo de verduras",
+        "Albahaca fresca"
+      ],
+      "pasos": [
+        "Pelar y picar los tomates, la cebolla y el ajo.",
+        "Sofreír la cebolla y el ajo en una olla con un poco de aceite de oliva.",
+        "Agregar los tomates picados y cocinar hasta que estén blandos.",
+        "Añadir el caldo de verduras y dejar cocinar a fuego lento durante 20 minutos.",
+        "Triturar la sopa con una batidora hasta obtener una textura suave.",
+        "Picar finamente la albahaca fresca y agregarla a la sopa.",
+        "Salpimentar al gusto y servir caliente."
+      ],
+      "sugerencias": "Puedes servir la sopa acompañada de croutons o queso rallado.",
+      "valoracion": 4.8,
+      "categorias": [
+        "guisos",
+        "potajes"
+      ],
+      "imagen": "https://media.istockphoto.com/id/689537488/es/foto/sopa-de-tomate-en-un-bol-negro-sobre-fondo-gris-piedra-vista-superior-copia-espacio.jpg?s=1024x1024&w=is&k=20&c=CXamkUXE27zsgMh1ZGUymBSVFUf8mpbiSi8E7difVao="
+    },
+    {
+      "id": "c238",
+      "titulo": "Pescado frito crujiente con especias",
+      "autor": "Juan mercado",
+      "descripcion": "Te contamos cómo hacer pescado frito crujiente con especias dando un toque personal al pescado con aromas y sabores a tu gusto.",
+      "sugerencias": "Puedes hacer Pescado frito crujiente con especias estilo Thai sustituyendo el limón por lima (con su ralladura) y el curry por media cucharadita de jengibre en polvo. Le darás un toque asiático muy fresco.",
+      "imagen": "https://www.divinacocina.es/wp-content/uploads/pescado-frito-crujiente.jpg",
+      "ingredientes": [
+        "600 g filetes o lomitos sin espinas de pescado blanco al gusto. Puede se congelado y de cualquier variedad: merluza, dorada, rosada, lenguado…",
+        "1 huevo",
+        "Una cucharadita rasa de ajo en polvo",
+        "4 cucharadas de zumo de limón y la ralladura de medio limón",
+        "Media cucharadita de curry en polvo",
+        "Media cucharadita de jengibre en polvo",
+        "3 cucharadas colmadas de harina",
+        "3 cucharadas de pan rallado",
+        "Sal y pimienta"
+      ],
+      "pasos": [
+        "Batimos el huevo y lo mezclamos con el zumo de limón, el curry, el ajo, la sal y la pimienta. Mezclamos el pescado con esta mezcla y lo dejamos marinar en la nevera una media hora,",
+        "Mezclamos el pan rallado y la harina y lo ponemos en un plato hondo.",
+        "Vamos pasando los trozos de pescado (sin escurrirlos mucho del huevo) por la mezcla de pan rallado y harina rebozando bien.",
+        "Freímos al momento en aceite caliente.",
+        "Servimos nuestro pescado frito crujiente al momento, recién frito y caliente."
+      ],
+      "valoracion": 0,
+      "categorias": [
+        "pescado"
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "01d5f",
+      "email": "admin@rollingrecetas.com",
+      "password": "123456789"
+    },
+    {
+      "id": "558c",
+      "email": "juanmer382@gmail.com",
+      "password": "Porta123"
+    },
+    {
+      "id": "6334",
+      "email": "florsaravia1123@gmail.com",
+      "password": "Porta123"
+    },
+    {
+      "id": "5571",
+      "email": "florsaravia11223@gmail.com",
+      "password": "Porta123"
+    },
+    {
+      "id": "dd64",
+      "email": "juanmer3823122@gmail.com",
+      "password": "Porta123"
+    }
+  ]
 }
