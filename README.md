@@ -10,6 +10,14 @@ Este proyecto es un blog de recetas donde podrás encontrar una variedad de deli
 2. **Router Utilizado:** React Router DOM v6 - Una librería de enrutamiento para React que te permite gestionar las rutas de tu aplicación.
 3. **Estilos:** Tailwind CSS - Un framework de CSS que te permite diseñar rápidamente interfaces de usuario modernas y receptivas.
 
+## Funcionamiento
+1. **CREAR,EDITAR,ACTUALIZAR,ELIMINAR, UNA RECETA**
+2. **RUTA ADMINISTRADOR PROTEJIDA**
+3. **LOGIN**:
+       CREDENCIALES ADMIN:
+          "email": "admin@rollingrecetas.com",
+          "password": "123456789"
+
 ## Instalación
 
 1. Clona este repositorio a tu máquina local.
