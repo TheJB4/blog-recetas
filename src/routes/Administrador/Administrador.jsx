@@ -16,7 +16,7 @@ export default function Administrador() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:4001/api/recetas')
+        fetch('https://blog-recetas-api.vercel.app/api/recetas')
             .then(res => res.json())
             .then(data => setRecetas(data))
     }, [])

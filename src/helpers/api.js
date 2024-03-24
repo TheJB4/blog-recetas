@@ -1,5 +1,5 @@
 
-let URL_API = 'http://localhost:4001/api/recetas'
+let URL_API = 'https://blog-recetas-api.vercel.app/api/recetas'
 
 export const obtenerRecetas = async () => {
     try {
@@ -75,7 +75,7 @@ export const eliminarUnaReceta = async (id) => {
 
 export const loginUsuario = async (data) => {
     try {
-        let response = await fetch(`http://localhost:4001/api/usuarios/${data.email}`, {
+        let response = await fetch(`https://blog-recetas-api.vercel.app/api/usuarios/${data.email}`, {
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ export const loginUsuario = async (data) => {
 export const crearUnUsuario = async (usuario) => {
     try {
         console.log(usuario)
-        let response = await fetch(`http://localhost:4001/api/usuarios`, {
+        let response = await fetch(`https://blog-recetas-api.vercel.app/api/usuarios`, {
             method: 'POST',
             headers: {
                 "Content-type": "application/json"
