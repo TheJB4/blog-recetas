@@ -15,12 +15,12 @@ export default function EditarReceta() {
         producto.valoracion = 0
         producto.categorias = categorias
         
-        let res = await editarUnaReceta(receta.id,producto)
+        let res = await editarUnaReceta(receta._id,producto)
 
         if(res.status === 200){
             Swal.fire({
                 title: "Receta Editada",
-                text: `La receta "${producto.titulo}" fue editada correctamente`,
+                text: `La receta "${producto.tituloReceta}" fue editada correctamente`,
                 icon: "success"
               });
               navigate('/')
@@ -46,7 +46,7 @@ export default function EditarReceta() {
                     <label htmlFor="tituloReceta" className="block mb-1">Título receta:</label>
                     <input
                         id="tituloReceta"
-                        {...register("titulo", { value: receta.titulo, required: true })}
+                        {...register("tituloReceta", { value: receta.tituloReceta, required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>

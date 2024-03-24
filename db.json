@@ -1,36 +1,6 @@
 {
   "recetas": [
     {
-      "titulo": "Tarta de manzana",
-      "autor": "Ana García",
-      "descripcion": "Una deliciosa tarta de manzana con base de hojaldre y un toque de canela.",
-      "sugerencias": "Puedes añadir pasas o nueces a la mezcla de manzana para darle un toque extra de sabor y textura.",
-      "imagen": "https://media.istockphoto.com/id/184350005/es/foto/rebanada-de-pastel-de-manzana-en-un-plato-sobre-un-fondo-blanco-isolalted.jpg?s=1024x1024&w=is&k=20&c=V-gworADGYA3NJCnwESpmv1pCVKXOHEcIAkud_3iA8A=",
-      "ingredientes": [
-        "1 lámina de hojaldre",
-        "3 manzanas",
-        "100g de azúcar",
-        "1 cucharadita de canela",
-        "Mantequilla"
-      ],
-      "pasos": [
-        "Precalentar el horno a 180°C.",
-        "Pelar y cortar las manzanas en láminas finas.",
-        "Estirar la lámina de hojaldre y colocarla en un molde.",
-        "Pinchar la base con un tenedor.",
-        "Espolvorear el azúcar y la canela sobre el hojaldre.",
-        "Colocar las láminas de manzana sobre el azúcar.",
-        "Hornear durante 30 minutos o hasta que esté dorada.",
-        "Servir caliente con una bola de helado."
-      ],
-      "valoracion": 0,
-      "categorias": [
-        "Postres",
-        "postres"
-      ],
-      "id": "1"
-    },
-    {
       "titulo": "Ensalada César",
       "autor": "Juan Martínezzz",
       "descripcion": "Una ensalada clásica con crutones crujientes, pollo a la parrilla y una salsa cremosa.",

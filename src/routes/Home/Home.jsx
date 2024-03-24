@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { obtenerRecetas } from "../../helpers/api"
 
 export default function Home() {
     let [recetas, setRecetas] = useState([])
-    let [filtro,setFiltro] = useState('')
+    let [filtro, setFiltro] = useState('')
+
+    let myRecetas = async () => {
+        let data = await obtenerRecetas()
+
+        setRecetas(data)
+    }
 
     useEffect(() => {
-        fetch('http://localhost:3000/recetas')
-            .then(res => res.json())
-            .then(data => setRecetas(data))
-            .catch(err => setRecetas(null))
+        myRecetas()
     }, [])
 
     return (
@@ -21,10 +25,10 @@ export default function Home() {
                         <img src={receta.imagen} alt="" className="w-full h-[200px]  object-cover mb-2 rounded-md grid-flow-col" />
                         <Link
                             to={`/${receta.titulo}`}
-                            state={{receta: receta}}
+                            state={{ receta: receta }}
                             className="text-center text-blue-500 hover:text-blue-700"
                         >
-                            {receta.titulo}
+                            {receta.tituloReceta}
                         </Link>
                     </div>
                 ))}

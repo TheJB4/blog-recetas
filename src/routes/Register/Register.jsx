@@ -11,8 +11,11 @@ export default function Register() {
     let navigate = useNavigate()
 
     const sendForm = async (usuario) => {
-        let data = await crearUnUsuario(usuario)
 
+        let data = await crearUnUsuario(usuario)
+        let dataMessages = await data.json()
+
+        console.log(dataMessages)
         if (data.status === 201) {
             Swal.fire({
                 title: "Usuario creado con exito",
@@ -24,7 +27,7 @@ export default function Register() {
         }else{
             Swal.fire({
                 title: "Ocurrio un error",
-                text: data.message,
+                text:dataMessages.message || dataMessages.errores[0].msg,
                 icon: "error"
               });
         }
@@ -45,7 +48,7 @@ export default function Register() {
                                 Correo electrónico
                             </label>
                             <input
-                                {...register('email', {
+                                {...register('correoElectronico', {
                                     required: true,
                                     pattern: {
                                         value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,

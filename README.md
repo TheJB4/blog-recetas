@@ -16,7 +16,7 @@ Este proyecto es un blog de recetas donde podrás encontrar una variedad de deli
 3. **LOGIN**:
        CREDENCIALES ADMIN:
           "email": "admin@rollingrecetas.com",
-          "password": "123456789"
+          "password": "123456789!"
 
 ## Instalación
 

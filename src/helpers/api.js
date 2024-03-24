@@ -1,11 +1,24 @@
-let URL_API = 'http://localhost:3000'
+
+let URL_API = 'http://localhost:4001/api/recetas'
+
+export const obtenerRecetas = async () => {
+    try {
+        let response = await fetch(`${URL_API}`)
+        let data = await response.json()
+
+        return data
+    } catch (err) {
+        return err
+    }
+}
+
 
 export const obtenerUnaRecetaPorCategoria = async (categoria) => {
     try {
 
-        let response = await fetch(`${URL_API}/recetas`)
+        let response = await fetch(`${URL_API}`)
         let data = await response.json()
-        
+
         let recetasPorCategoria = data.filter(element => element.categorias.includes(categoria.toLowerCase()))
         return recetasPorCategoria
     } catch (err) {
@@ -15,10 +28,13 @@ export const obtenerUnaRecetaPorCategoria = async (categoria) => {
 
 
 export const crearUnaReceta = async (datos) => {
+    console.log(datos)
     try {
-        console.log(datos)
-        let response = await fetch(`${URL_API}/recetas`, {
+        let response = await fetch(`${URL_API}`, {
             method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify(datos)
         })
 
@@ -30,8 +46,12 @@ export const crearUnaReceta = async (datos) => {
 
 export const editarUnaReceta = async (id, datos) => {
     try {
-        let response = await fetch(`${URL_API}/recetas/${id}`, {
+        console.log(datos)
+        let response = await fetch(`${URL_API}/${id}`, {
             method: 'PUT',
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify(datos)
         })
 
@@ -43,7 +63,7 @@ export const editarUnaReceta = async (id, datos) => {
 
 export const eliminarUnaReceta = async (id) => {
     try {
-        let response = await fetch(`${URL_API}/recetas/${id}`, {
+        let response = await fetch(`${URL_API}/${id}`, {
             method: 'DELETE'
         })
 
@@ -53,40 +73,37 @@ export const eliminarUnaReceta = async (id) => {
     }
 }
 
-export const obtenerUsuarios = async () => {
-    try{
-        let response = await fetch(`${URL_API}/usuarios`)
+export const loginUsuario = async (data) => {
+    try {
+        let response = await fetch(`http://localhost:4001/api/usuarios/${data.email}`, {
+            method: 'POST',
+            headers: {
+                'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'
+            },
+            credentials: 'include',
+            body: JSON.stringify(data)
+        })
 
-        let data = await response.json()
-
-        return data
-    }catch(err){
+        return response
+    } catch (err) {
 
     }
 }
 
 
-export const crearUnUsuario = async (usuario) =>{
-    try{
-        let usuarios = await obtenerUsuarios()
-        let usuarioExistente = usuarios.find((user) => user.email === usuario.email)
+export const crearUnUsuario = async (usuario) => {
+    try {
+        console.log(usuario)
+        let response = await fetch(`http://localhost:4001/api/usuarios`, {
+            method: 'POST',
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify(usuario)
+        })
 
-        console.log(usuarioExistente)
-        if(usuarioExistente){
-            throw {
-                message:`El usuario ${usuario.email} ya existe!`,
-                status:400
-            }
-        }else{
-            let response = await fetch(`${URL_API}/usuarios`,{
-                method: 'POST',
-                body:JSON.stringify(usuario)
-            })
-            
-            return response
-        }
-
-    }catch(err){
+        return response
+    } catch (err) {
         return err
     }
 }

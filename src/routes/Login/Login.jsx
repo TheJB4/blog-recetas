@@ -1,30 +1,35 @@
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
-import { Link, json } from "react-router-dom"
-import { obtenerUsuarios } from "../../helpers/api"
+import { Link, Navigate, json, useNavigate } from "react-router-dom"
+import { loginUsuario } from "../../helpers/api"
+import Swal from "sweetalert2"
 
 export default function Login() {
     const { register, handleSubmit, formState: { errors }, reset, resetField } = useForm()
-
-    let [users,setUsers] = useState([])
-
-    let getUsers = async () => {
-        let Allusers = await obtenerUsuarios()
-
-        setUsers(Allusers)
-    }
-    useEffect(()=>{
-        getUsers()
-    },[])   
+    let navigate = useNavigate()
 
     const sendForm = async (usuario) => {
-        let myUser = users.find(user => user.email === usuario.email)
+        //let myUser = users.find(user => user.email === usuario.email)
 
-        if(myUser.password === usuario.password){
-            sessionStorage.setItem('user',JSON.stringify({email: myUser.email}))
-            location.href = '/'
-        }else{
-            console.log('Not logged')
+        let response = await loginUsuario(usuario)
+        let responseMessage = await response.json()
+
+        console.log(responseMessage)
+        if(response.status === 404){
+            Swal.fire({
+                title: "Ocurrio un error",
+                text: `${responseMessage.message}`,
+                icon: "error"
+              });
+        }else if(response.status === 400){
+            Swal.fire({
+                title: "Ocurrio un error",
+                text: `${responseMessage.message}`,
+                icon: "error"
+              });
+        }else if(response.status === 200){
+                sessionStorage.setItem('user',JSON.stringify(responseMessage.data))
+                navigate('/')
         }
     }
 

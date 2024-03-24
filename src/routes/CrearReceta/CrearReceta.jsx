@@ -14,18 +14,17 @@ export default function CrearReceta() {
 
         let response = await crearUnaReceta(producto)
 
-        console.log(response)
         if(response.status === 201){
             Swal.fire({
                 title: "Receta Creada",
-                text: `La receta "${producto.titulo}" fue creado correctamente`,
+                text: `La receta "${producto.tituloReceta}" fue creado correctamente`,
                 icon: "success"
               });
               navigate('/')
         }else{
             Swal.fire({
                 title: "Ocurrio un error",
-                text: `La receta "${producto.titulo}" no pudo ser creada. Intenta esta operación en unos minutos.`,
+                text: `La receta "${producto.tituloReceta}" no pudo ser creada. Intenta esta operación en unos minutos.`,
                 icon: "error"
               });
         }
@@ -47,7 +46,7 @@ export default function CrearReceta() {
                     <label htmlFor="tituloReceta" className="block mb-1">Título receta:</label>
                     <input
                         id="tituloReceta"
-                        {...register("titulo", { required: true })}
+                        {...register("tituloReceta", { required: true })}
                         className="w-full px-4 py-2 border rounded-md"
                     />
                 </div>

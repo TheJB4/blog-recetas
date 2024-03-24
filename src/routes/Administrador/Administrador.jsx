@@ -16,7 +16,7 @@ export default function Administrador() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:3000/recetas')
+        fetch('http://localhost:4001/api/recetas')
             .then(res => res.json())
             .then(data => setRecetas(data))
     }, [])
@@ -28,7 +28,7 @@ export default function Administrador() {
         if (response.status === 200) {
             Swal.fire({
                 title: "Receta Eliminada",
-                text: `La receta "${producto.titulo}" fue Eliminada orrectamente`,
+                text: `La receta "${producto.tituloReceta}" fue Eliminada orrectamente`,
                 icon: "success"
             });
             navigate('/')
@@ -75,7 +75,7 @@ export default function Administrador() {
                             {recetas.map((receta) => (
                                 <tr key={receta.id} className="bg-white">
                                     <td className="px-6 py-4 whitespace-nowrap">
-                                        <div className="text-sm text-gray-900">{receta.titulo}</div>
+                                        <div className="text-sm text-gray-900">{receta.tituloReceta}</div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         <div className="text-sm text-gray-900">{receta.autor}</div>
@@ -99,7 +99,7 @@ export default function Administrador() {
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-left text-sm font-medium">
                                         <button onClick={() => navigate('/editarReceta', { state: { receta: receta } })} className="text-indigo-600 hover:text-indigo-900 mr-2">Editar</button>
-                                        <button onClick={() => eliminarReceta(receta.id, receta)} className="text-red-600 hover:text-red-900">Eliminar</button>
+                                        <button onClick={() => eliminarReceta(receta._id, receta)} className="text-red-600 hover:text-red-900">Eliminar</button>
                                     </td>
                                 </tr>
                             ))}
